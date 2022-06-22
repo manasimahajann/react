@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "react"
+    "liveServer.settings.multiRootWorkspaceName": "react",
+    "prettier.insertPragma": true
 }
