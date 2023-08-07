@@ -1,4 +1,4 @@
-import { Typography, Toolbar, ToggleButton, ToggleButtonGroup, Switch, Container, ButtonGroup, Button } from '@mui/material';
+import { Typography, Container, ButtonGroup, Button } from '@mui/material';
 import  agent from '../../app/api/agent';
 
 
@@ -11,10 +11,7 @@ export default function AboutPage(){
                 <Button variant='contained' onClick={() => agent.TestErrors.get401Error().catch(error => console.log(error))}> Test 401 Error</Button>
                 <Button variant='contained' onClick={() => agent.TestErrors.get500Error().catch(error => console.log(error))}> Test 500 Error</Button>
                 <Button variant='contained' onClick={() => agent.TestErrors.getValidationError().catch(error => console.log(error))}> Test validation Error</Button>
-            </ButtonGroup>
-        
-        
-        
+            </ButtonGroup> 
         </Container>
             )
 }
